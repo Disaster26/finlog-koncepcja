@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FINLOG - biuro rachunkowe i doradztwo logistyczne, Skórzewo k. Poznania</title>
+<meta name="description" content="Biuro rachunkowo-konsultingowe FINLOG, ul. Poznańska 75, Skórzewo. Księgi handlowe, KPiR, ryczałt, kadry i płace, ZUS oraz doradztwo logistyczne dla firm z Poznania i okolic. Tel. 603 998 360.">
+<meta property="og:title" content="FINLOG - biuro rachunkowe i doradztwo logistyczne">
+<meta property="og:description" content="Księgowość małych i średnich firm oraz doradztwo logistyczne. Skórzewo k. Poznania, ul. Poznańska 75.">
+<meta property="og:image" content="img/biuro.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ziel:#6f9a1f;--ziel2:#5b8016;--lime:#c9e34e;--szary:#4a4a4a;--jasny:#f5f7f0;--linia:#e3e7da;--tekst:#262626;--ciemny:#1f1f1f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Nunito,system-ui,Segoe UI,Arial,sans-serif;color:var(--tekst);background:#fff;line-height:1.6;font-size:17px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--ziel)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.pasek{background:var(--ciemny);color:#cfd4c4;font-size:13px;text-align:center;padding:6px 12px}
+.pasek b{color:#fff}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia);box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;position:relative}
+.logo{text-decoration:none;display:flex;align-items:center;gap:12px}
+.logo .znak{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--lime),var(--ziel));color:#fff;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;letter-spacing:-1px}
+.logo b{display:block;font-size:22px;color:var(--ciemny);letter-spacing:1px;line-height:1.1}
+.logo small{display:block;font-size:12px;color:var(--szary);font-weight:600}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:26px}
+nav a{color:var(--szary);text-decoration:none;font-weight:700;font-size:15px}
+nav a:hover{color:var(--ziel)}
+.tel{background:var(--ziel);color:#fff!important;padding:10px 18px;border-radius:999px;font-weight:800;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+.tel:hover{background:var(--ziel2)}
+.burger{display:none;background:none;border:0;font-size:28px;line-height:1;color:var(--szary);cursor:pointer}
+.hero{background:linear-gradient(180deg,#fff 0%,var(--jasny) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;padding-top:60px;padding-bottom:60px}
+.hero h1{font-size:44px;line-height:1.12;margin:0 0 14px;font-weight:800;color:var(--ciemny)}
+.hero h1 span{color:var(--ziel)}
+.hero p{font-size:19px;color:var(--szary);margin:0 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:800;text-decoration:none;font-size:16px}
+.btn-p{background:var(--ziel);color:#fff}.btn-p:hover{background:var(--ziel2)}
+.btn-s{background:#fff;color:var(--szary);border:2px solid var(--linia)}.btn-s:hover{border-color:var(--ziel);color:var(--ziel)}
+.hero-img{border-radius:22px;overflow:hidden;box-shadow:0 20px 50px rgba(111,154,31,.18);aspect-ratio:4/3;position:relative;background:#e9eee0}
+.hero-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.hero-img .nakladka{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(90deg,var(--ziel) 0%,var(--lime) 100%);color:#fff;padding:14px 20px;font-weight:800;font-size:17px}
+.zaufanie{display:flex;gap:28px;flex-wrap:wrap;margin-top:30px;font-size:14px;color:var(--szary)}
+.zaufanie b{display:block;color:var(--ciemny);font-size:20px}
+section{padding:64px 0}
+h2{font-size:32px;margin:0 0 10px;color:var(--ciemny);font-weight:800}
+.lead{color:var(--szary);max-width:740px;margin:0 0 34px;font-size:18px}
+.onas{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
+.onas p{margin:0 0 16px}
+.atuty{display:grid;gap:14px}
+.atut{background:var(--jasny);border-radius:16px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.atut i{flex:none;width:40px;height:40px;border-radius:50%;background:var(--ziel);color:#fff;display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:800}
+.atut b{display:block;color:var(--ciemny)}
+.atut span{color:var(--szary);font-size:15px}
+.uslugi{background:var(--jasny)}
+.karty{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.karta{background:#fff;border:1px solid var(--linia);border-radius:18px;padding:28px}
+.karta h3{margin:0 0 6px;font-size:22px;color:var(--ziel)}
+.karta .pod{color:var(--szary);font-size:15px;margin:0 0 14px}
+.karta ul{margin:0;padding-left:0;list-style:none;color:var(--tekst);font-size:16px}
+.karta li{margin:7px 0;padding-left:26px;position:relative}
+.karta li:before{content:"";position:absolute;left:0;top:9px;width:14px;height:14px;border-radius:50%;background:var(--lime);border:3px solid #fff;box-shadow:0 0 0 1px var(--ziel)}
+.dlakogo{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.dk{border:1px solid var(--linia);border-radius:18px;padding:24px}
+.dk h3{margin:0 0 8px;font-size:18px;color:var(--ciemny)}
+.dk p{margin:0;color:var(--szary);font-size:15.5px}
+.krok{background:var(--jasny)}
+.kroki{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:k}
+.kroki div{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--linia)}
+.kroki div:before{counter-increment:k;content:counter(k);display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--ziel);color:#fff;align-items:center;justify-content:center;font-weight:800;margin-bottom:10px}
+.kroki b{display:block;color:var(--ciemny);margin-bottom:4px}
+.kroki span{color:var(--szary);font-size:15px}
+.kontakt .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.dane{font-size:17px}.dane p{margin:0 0 12px}
+.dane a.big{font-size:24px;font-weight:800;text-decoration:none;display:inline-block}
+.godz{margin-top:18px;padding:16px 18px;background:var(--jasny);border-radius:14px;font-size:15px;color:var(--szary)}
+.mapa{border-radius:18px;overflow:hidden;border:1px solid var(--linia)}
+.mapa iframe{width:100%;height:340px;border:0;display:block}
+.mapa a{display:block;text-align:center;padding:12px;font-weight:700;text-decoration:none;background:#fff}
+footer{background:var(--ciemny);color:#bdc3b0;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer a{color:#fff;text-decoration:none}
+.fab{position:fixed;right:16px;bottom:16px;z-index:60;display:none}
+@media (max-width:900px){
+ .hero .wrap,.onas,.kontakt .wrap{grid-template-columns:1fr}
+ .hero h1{font-size:34px}.karty{grid-template-columns:1fr}.dlakogo{grid-template-columns:1fr}.kroki{grid-template-columns:1fr 1fr}
+ .hero .wrap{padding-top:34px;padding-bottom:40px}
+ nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--linia)}
+ nav ul.otwarte{display:flex}
+ nav li{border-top:1px solid var(--linia)}nav li a{display:block;padding:14px 20px}
+ .burger{display:block}
+ .nav .tel{display:none}
+ .fab{display:block}
+ section{padding:44px 0}h2{font-size:27px}
+}
+@media (max-width:520px){.kroki{grid-template-columns:1fr}.zaufanie{gap:18px}}
+</style>
+</head>
+<body>
+<div class="pasek">Biuro rachunkowo-konsultingowe <b>FINLOG</b> · Skórzewo k. Poznania · certyfikat Ministra Finansów</div>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#"><span class="znak">FL</span><span><b>FINLOG</b><small>usługi rachunkowo-konsultingowe</small></span></a>
+  <nav>
+   <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('otwarte')">&#9776;</button>
+   <ul id="menu">
+    <li><a href="#onas">O firmie</a></li>
+    <li><a href="#ksiegowosc">Księgowość</a></li>
+    <li><a href="#logistyka">Doradztwo logistyczne</a></li>
+    <li><a href="#wspolpraca">Współpraca</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+   </ul>
+  </nav>
+  <a class="tel" href="tel:+48603998360">&#9742; 603 998 360</a>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <h1>Księgowość i <span>doradztwo logistyczne</span> dla firm z Poznania i okolic</h1>
+   <p>Na bazie wieloletniego doświadczenia zbudowaliśmy firmę świadczącą wyspecjalizowane usługi rachunkowe oraz konsultingowe z problematyki logistycznej. Prowadzimy księgi, kadry i rozliczenia z ZUS, a w razie potrzeby porządkujemy magazyn i obieg dokumentów.</p>
+   <div class="cta">
+    <a class="btn btn-p" href="tel:+48603998360">Zadzwoń: 603 998 360</a>
+    <a class="btn btn-s" href="mailto:biuro@finlog.com.pl">Napisz: biuro@finlog.com.pl</a>
+   </div>
+   <div class="zaufanie">
+    <div><b>Certyfikat MF</b>uprawnienia do usługowego prowadzenia ksiąg</div>
+    <div><b>Odbiór dokumentów</b>przyjedziemy do Państwa firmy</div>
+    <div><b>Parking</b>dogodne miejsca przy biurze</div>
+   </div>
+  </div>
+  <div class="hero-img"><img src="img/biuro.jpg" alt="Biuro rachunkowe FINLOG"><div class="nakladka">ul. Poznańska 75, 60-185 Skórzewo</div></div>
+ </div>
+</section>
+
+<section id="onas">
+ <div class="wrap onas">
+  <div>
+   <h2>Biuro rachunkowe, które rozumie logistykę</h2>
+   <p>FINLOG łączy dwie kompetencje rzadko spotykane w jednym miejscu: usługowe prowadzenie ksiąg rachunkowych oraz doradztwo w zakresie logistyki przedsiębiorstw. Dzięki temu widzimy firmę Klienta w całości - od faktury i listy płac po stan zapasów i przestrzeń magazynową.</p>
+   <p>Pracujemy dla małych i średnich firm z Poznania oraz powiatu poznańskiego: handlowych, produkcyjnych, transportowych i usługowych. Dokumenty można dostarczyć do biura w Skórzewie, przesłać elektronicznie albo umówić ich odbiór.</p>
+  </div>
+  <div class="atuty">
+   <div class="atut"><i>1</i><div><b>Wieloletnie doświadczenie</b><span>księgowość i konsulting logistyczny prowadzone przez praktyków</span></div></div>
+   <div class="atut"><i>2</i><div><b>Certyfikat Ministra Finansów</b><span>uprawnienia do usługowego prowadzenia ksiąg rachunkowych</span></div></div>
+   <div class="atut"><i>3</i><div><b>Wygoda</b><span>odbiór dokumentów od Klienta i dogodne miejsca parkingowe przy biurze</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="uslugi" id="ksiegowosc">
+ <div class="wrap">
+  <h2>Zakres usług</h2>
+  <p class="lead">Dwa filary działalności FINLOG. Zakres ustalamy indywidualnie, w zależności od formy prawnej, wielkości firmy i liczby dokumentów.</p>
+  <div class="karty">
+   <div class="karta">
+    <h3>Księgowość małych i średnich firm</h3>
+    <p class="pod">Kompleksowa obsługa rachunkowa, kadrowa i rozliczeniowa.</p>
+    <ul>
+     <li>Księgi handlowe (pełna księgowość)</li>
+     <li>Podatkowa księga przychodów i rozchodów oraz ryczałt</li>
+     <li>Rozliczenia z Urzędem Skarbowym (PIT, CIT, VAT, JPK)</li>
+     <li>Kadry i płace: umowy, listy płac, PIT-11</li>
+     <li>ZUS: zgłoszenia, deklaracje, rozliczenia składek</li>
+     <li>Sprawozdania finansowe i kontakt z urzędami</li>
+    </ul>
+   </div>
+   <div class="karta" id="logistyka">
+    <h3>Doradztwo w zakresie logistyki przedsiębiorstw</h3>
+    <p class="pod">Analiza i optymalizacja procesów, które generują koszty.</p>
+    <ul>
+     <li>Optymalizacja struktur organizacyjnych i zakresów obowiązków</li>
+     <li>Obieg dokumentów w firmie</li>
+     <li>Optymalizacja zapasów surowców i wyrobów gotowych</li>
+     <li>Optymalizacja operacji magazynowych i przestrzeni składowej</li>
+     <li>Analiza, ocena i optymalizacja procesów logistycznych</li>
+     <li>Szkolenia logistyczne dla pracowników i kadry</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <h2>Dla kogo</h2>
+  <p class="lead">Najczęściej współpracujemy z trzema grupami Klientów.</p>
+  <div class="dlakogo">
+   <div class="dk"><h3>Jednoosobowe działalności i spółki cywilne</h3><p>KPiR lub ryczałt, VAT, ZUS przedsiębiorcy, roczne zeznanie. Dokumenty raz w miesiącu, reszta po naszej stronie.</p></div>
+   <div class="dk"><h3>Spółki z o.o. i firmy na pełnej księgowości</h3><p>Księgi handlowe, sprawozdania finansowe, kadry i płace, CIT. Stały kontakt z księgową prowadzącą firmę.</p></div>
+   <div class="dk"><h3>Firmy produkcyjne, handlowe i transportowe</h3><p>Księgowość plus doradztwo logistyczne: zapasy, magazyn, obieg dokumentów, szkolenia zespołu.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="krok" id="wspolpraca">
+ <div class="wrap">
+  <h2>Jak zaczynamy współpracę</h2>
+  <p class="lead">Cztery proste kroki, bez zbędnych formalności.</p>
+  <div class="kroki">
+   <div><b>Rozmowa</b><span>telefon lub e-mail: forma działalności, liczba dokumentów, pracownicy.</span></div>
+   <div><b>Wycena</b><span>indywidualna propozycja zakresu i miesięcznej opłaty.</span></div>
+   <div><b>Umowa i przejęcie</b><span>pełnomocnictwa do US i ZUS, przejęcie dokumentacji od poprzedniego biura.</span></div>
+   <div><b>Obsługa</b><span>comiesięczne rozliczenia, przypomnienia o terminach, odbiór dokumentów.</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+ <div class="wrap">
+  <div class="dane">
+   <h2>Kontakt</h2>
+   <p><b>Biuro rachunkowo-konsultingowe "FINLOG"</b><br>ul. Poznańska 75<br>60-185 Skórzewo (gm. Dopiewo, k. Poznania)</p>
+   <p>Tel. kom.: <a class="big" href="tel:+48603998360">603 998 360</a></p>
+   <p>Tel.: <a href="tel:+48618667824">(61) 866 78 24</a></p>
+   <p>E-mail: <a href="mailto:biuro@finlog.com.pl">biuro@finlog.com.pl</a></p>
+   <div class="godz"><b>Dojazd:</b> ul. Poznańska w Skórzewie, przy drodze z Poznania (Grunwald) w kierunku Dopiewa. Dogodne miejsca parkingowe przy biurze. Możliwy odbiór dokumentów od Klienta.</div>
+  </div>
+  <div class="mapa">
+   <iframe title="Mapa dojazdu FINLOG Skórzewo" loading="lazy" src="https://www.google.com/maps?q=Pozna%C5%84ska+75,+60-185+Sk%C3%B3rzewo&output=embed"></iframe>
+   <a href="https://www.google.com/maps/search/?api=1&query=Pozna%C5%84ska+75,+60-185+Sk%C3%B3rzewo" target="_blank" rel="noopener">Otwórz w Google Maps</a>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <div>&copy; 2026 "FINLOG" usługi rachunkowo-konsultingowe · Skórzewo</div>
+  <div><a href="tel:+48603998360">603 998 360</a> · <a href="mailto:biuro@finlog.com.pl">biuro@finlog.com.pl</a></div>
+ </div>
+</footer>
+<a class="fab tel" href="tel:+48603998360">&#9742; Zadzwoń</a>
+</body>
+</html>
